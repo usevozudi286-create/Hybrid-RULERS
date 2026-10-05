@@ -1,0 +1,31 @@
+# Public-release allowlist (review each file before publishing)
+
+# Documentation and protocols
+README.md
+PUBLIC_RELEASE_ALLOWLIST.txt
+requirements.txt
+README_FOR_NEW_CHAT.md
+stage_b/protocol/protocol.md
+stage_b/protocol/evidence_note.md
+stage_b/protocol/mci_rubric_audio_en_v1.json
+
+# Code (only after replacing workstation-specific paths with configurable inputs)
+stage_a/core/*.py
+stage_a/reanalysis/*.py
+stage_a/recheck/*.py
+stage_b/analysis/*.py
+stage_b/repeatability/*.py
+lu/*.py
+
+# Figures and manuscript source may be released separately after author review
+manuscript/*.png
+manuscript/*.pdf
+manuscript/*.tex
+manuscript/*.bib
+
+# Do not publish by default
+# - any audio, CHAT/EAF file, raw transcript, API request/response, or .env file
+# - participant-level CSV/JSON/JSONL files or files containing sample/subject IDs
+# - absolute-path manifests and internal hash/audit archives
+# - model checkpoints, credentials, or unrestricted source tables
+

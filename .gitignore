@@ -1,0 +1,50 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+
+# Restricted or participant-level research material
+*.wav
+*.mp3
+*.flac
+*.cha
+*.eaf
+*.jsonl
+**/*request*
+**/*response*
+**/*per_sample*
+**/*participant*
+**/*transcript*
+**/*audio_path*
+**/source_manifest.csv
+**/label_mapping.csv
+**/inclusion_counts.csv
+**/reproduction_checks.json
+**/run_log.txt
+
+# Conservative default: review generated tables individually
+*.csv
+*.json
+
+# LaTeX build products
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
